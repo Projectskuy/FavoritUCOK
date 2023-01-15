@@ -10,6 +10,7 @@ const { uptotelegra } = require('./scrape/upload')
 const tiktok = require('./scrape/tiktok')
 const audionye = fs.readFileSync('./y.mp3')
 const owner = JSON.parse(fs.readFileSync('./database/owner.json').toString())
+const setting = JSON.parse(fs.readFileSync('./database/config.json').toString())
 
 global.db = JSON.parse(fs.readFileSync('./database/database.json'))
 if (global.db) global.db = {
@@ -219,11 +220,13 @@ case 'bugmenu':
 case 'help':
 case 'menu':
 jiren = `
-┏━━⬣  INFOMASI
-┃ Owner Name : Denzz Banned ✅
-┃ Bot Name : VIPbanned
-┃ run : panel only
-┗━━⬣  ⿻ Botz Wa ⿻
+╔═══《 𝑩𝑶𝑻 𝑰𝑵𝑭𝑶 》════
+╠❏ ᴄʀᴇᴀᴛᴏʀ : @${ownerNya.split('@')[0]}
+╠❏ ʙᴏᴛ ɴᴀᴍᴇ : ${setting.botName}
+╠❏ ᴏᴡɴᴇʀ ɴᴀᴍᴇ : ${setting.ownerName}
+╠❏ ʀᴜɴɴɪɴɢ : ᴘᴀɴᴇʟ ᴏɴʟʏ
+╠❏ ᴘʀᴇғɪx : ( ᴍᴜʟᴛɪ ᴘʀᴇғɪx )
+╚════════════════
 
 ╔─═─═⊱ 「 𝐎𝐓𝐇𝐄𝐑 𝐌𝐄𝐍𝐔 」 ─═─═⬣
 │┏
