@@ -1,4 +1,4 @@
-const { modul } = require('./module');
+1 we econst { modul } = require('./module');
 const { axios, baileys, chalk, cheerio, child_process, crypto, fs, ffmpeg, jsobfus, moment, ms, speed, util } = modul;
 const { exec, spawn, execSync } = child_process
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = baileys
@@ -232,8 +232,8 @@ jiren = ` ┏━━⬣  Thanks To  友
 │⿻ stats ( Untuk Cek Status )
 │⿻ listjualan
 │⿻ Restart
-│⿻ UCOKmaker @ / 62xxx / Tambah Akses
-│⿻ DENZZmaker @ / 62xxxx / Ilangin Akses 
+│⿻ addusr @ / 62xxxx
+│⿻ delusr @ / 62xxx
 │⿻ kick @ / 62xxx / Menendang Orang Dari Grub 
 ║┗⊱
 ┗━━━━━━━━━━━━━━━━━━⬣
@@ -411,8 +411,8 @@ jiren = ` ╔─═─═⊱ 「 𝐎𝐓𝐇𝐄𝐑 𝐌𝐄𝐍𝐔 」 ─�
 │⿻ stats ( Untuk Cek Status )
 │⿻ Listjualan
 │⿻ Restart
-│⿻ UCOKmaker @ / 62xxxx
-│⿻ DENZZmaker @ / 62xxx
+│⿻ addusr @ / 62xxxx
+│⿻ delusr @ / 62xxx
 │⿻ kick @
 ║┗⊱
 ┗━━━━━━━━━━━━━━━━━━⬣`
@@ -607,8 +607,8 @@ let { stdout, stderr } = o
 }
 }
 break
-case 'UCOK':
-case 'UCOKmaker':
+case 'add':
+case 'addusr':
  if (!isGroup) return diablobotwhatsapp.reply(`wajib dalam grup`)
 if (!isGroupAdmins) return diablobotwhatsapp.reply(`sorry anda sepertinya bukan pemilik bot`)
 
@@ -620,8 +620,8 @@ owner.push(bnnd)
 fs.writeFileSync('./database/owner.json', JSON.stringify(owner))
 diablobotwhatsapp.reply(`Nomor ${bnnd} Udah Di Kasih Akses Jangan Lupa Jeda Kalo Enggk Kick Permanen :)`)
 break
-case 'DENZZ':
-case 'DENZZmaker':
+case 'del':
+case 'delusr':
 if (!isGroup) return diablobotwhatsapp.reply(`wajib dalam grup`)
 if (!isGroupAdmins) return diablobotwhatsapp.reply(`sorry anda sepertinya bukan pemilik bot`)
 
