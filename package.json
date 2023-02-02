@@ -5,7 +5,7 @@
   "main": "next.js",
   "type": "commonjs",
   "scripts": {
-    "start": "pm2 main.js && pm2 save && pm2 logs"
+    "start": "yarn install && npm start"
   },
   "keywords": [
     "termux",
